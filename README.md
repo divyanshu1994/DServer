@@ -11,7 +11,7 @@ var fs=require('fs');
 var ds=new DS();
 
 
-ds.add('/',function(req,res)   //  add route for '/'
+ds.add('/',function(req,res)   //  add route for '/' 
 {
          res.writeHead(200,{'Content-Type':'text/html'});
           fs.createReadStream(__dirname+'/index.html').pipe(res);
